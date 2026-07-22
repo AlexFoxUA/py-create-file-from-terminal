@@ -7,12 +7,12 @@ dirs = []
 filename = None
 i = 1
 while i < len(sys.argv):
-    if sys.argv[i] == '-d':
+    if sys.argv[i] == "-d":
         i += 1
-        while i < len(sys.argv) and not sys.argv[i].startswith('-'):
+        while i < len(sys.argv) and not sys.argv[i].startswith("-"):
             dirs.append(sys.argv[i])
             i += 1
-    elif sys.argv[i] == '-f':
+    elif sys.argv[i] == "-f":
         i += 1
         if i < len(sys.argv):
             filename = sys.argv[i]
